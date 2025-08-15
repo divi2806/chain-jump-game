@@ -11,27 +11,22 @@ export async function GET() {
       },
     
     frame: {
+      name: "Space Jump ",
       version: "1",
-      name: "Chain Jump",
-      iconUrl: `${APP_URL}/images/icon.png`,
-      homeUrl: `${APP_URL}`,
-      imageUrl: `${APP_URL}/images/feed.png`,
-      screenshotUrls: [],
-      tags: ["arbitrum", "farcaster", "miniapp", "games"],
-      primaryCategory: "games",
-      buttonTitle: "Play Now",
-      splashImageUrl: `${APP_URL}/images/splash.png`,
+      iconUrl: "https://i.ibb.co/GjbhL0B/logo.png",
+      homeUrl: "https://chain-jump-game-ve1i.vercel.app",
+      imageUrl: "https://i.ibb.co/GjbhL0B/logo.png",
+      splashImageUrl: "https://i.ibb.co/GjbhL0B/logo.png",
       splashBackgroundColor: "#ffffff",
-      webhookUrl: `${APP_URL}/api/webhook`,
-      subtitle: "Chain Jump",
-      description: "Chain Jump",
-      tagline:"Chain Jump",
-      ogTitle:"Chain Jump",
-      ogDescription: "Chain Jump",
-      ogImageUrl: `${APP_URL}/images/feed.png`,
-      heroImageUrl: `${APP_URL}/images/feed.png`,
-      requiredChains: ["eip155:42161"],
-    },
+      webhookUrl: "https://chain-jump-game-ve1i.vercel.app/api/webhook",
+      description: "Addictive space game to just dodge and compete",
+      primaryCategory: "games",
+      heroImageUrl: "https://i.ibb.co/GjbhL0B/logo.png",
+      screenshotUrls: [
+        "https://i.ibb.co/GjbhL0B/logo.png"
+      ],
+      subtitle: "Addicting space game made in 3 hours "
+    }
 
   };
 
