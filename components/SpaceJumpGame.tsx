@@ -3,7 +3,11 @@
 import { useEffect, useRef } from 'react'
 import styles from './SpaceJumpGame.module.css'
 
-export default function SpaceJumpGame() {
+interface SpaceJumpGameProps {
+  className?: string
+}
+
+export default function SpaceJumpGame({ className }: SpaceJumpGameProps) {
   const gameInitialized = useRef(false)
 
   useEffect(() => {
@@ -29,7 +33,7 @@ export default function SpaceJumpGame() {
   }, [])
 
   return (
-    <div id="gameContainer" className={styles.gameContainer}>
+    <div id="gameContainer" className={`${styles.gameContainer} ${className || ''}`}>
       <canvas id="gameCanvas" className={styles.gameCanvas}></canvas>
       
       <div id="ui" className={styles.ui}>

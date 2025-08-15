@@ -1,13 +1,11 @@
 'use client'
 
-import { FarcasterActions } from '@/components/Home/FarcasterActions'
 import SpaceJumpGame from '@/components/SpaceJumpGame'
+
 export function Demo() {
   return (
     <div className="">
-              <SpaceJumpGame className="h-[90vh] w-full max-w-md " />
-        
-      
+      <SpaceJumpGame className="h-[90vh] w-full max-w-md " />
     </div>
   )
 }
