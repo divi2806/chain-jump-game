@@ -5,10 +5,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/space-jump-game' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/space-jump-game' : '',
-  trailingSlash: true,
-  output: 'export'
+  // Remove static export and base path for Vercel deployment
+  trailingSlash: false,
+  // Keep API routes working
+  experimental: {
+    serverComponentsExternalPackages: []
+  }
 }
 
 module.exports = nextConfig

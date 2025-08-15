@@ -1,0 +1,18 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": ".next",
+  "installCommand": "pnpm install",
+  "devCommand": "pnpm run dev",
+  "framework": "nextjs",
+  "functions": {
+    "app/farcaster.json/route.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/farcaster.json",
+      "destination": "/api/farcaster"
+    }
+  ]
+}
